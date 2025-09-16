@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_QAnimatedGridLayout_Test_FILE /home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/QAnimatedGridLayout_Test)
-set(__QT_DEPLOY_TARGET_QAnimatedGridLayout_Test_TYPE EXECUTABLE)
