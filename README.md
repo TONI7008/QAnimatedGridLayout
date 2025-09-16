@@ -9,7 +9,6 @@ A sample Qt project demonstrating the use of an animated grid layout. This proje
 - Example usage of custom QLayout subclass
 
 ## Requirements
-
 - Qt 6.5
 - C++ compiler (e.g., GCC, Clang, MSVC)
 
