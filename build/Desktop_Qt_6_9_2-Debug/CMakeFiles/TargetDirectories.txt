@@ -1,0 +1,9 @@
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/QAnimatedGridLayout_Test.dir
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/edit_cache.dir
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/rebuild_cache.dir
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/list_install_components.dir
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/install.dir
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/install/local.dir
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/install/strip.dir
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/QAnimatedGridLayout_Test_autogen_timestamp_deps.dir
+/home/hacker/Documents/Qt_Code/QAnimatedGridLayout_Test/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/QAnimatedGridLayout_Test_autogen.dir
