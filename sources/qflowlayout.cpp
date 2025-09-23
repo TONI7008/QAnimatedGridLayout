@@ -30,13 +30,6 @@ void QFlowLayout::addWidget(QWidget *widget, short _row, short _column, short _r
         wrapper=WidgetWrapper(cellWrapper(_row,_column,_rowSpan,columnSpan),widget, widget->sizePolicy());
         widgetList.append(wrapper);
 
-
-        if(wrapper.isValid()){
-            QGridLayout::addWidget(widget,_row,_column,_rowSpan,columnSpan,align);
-        }else{
-            QGridLayout::addWidget(widget);
-        }
-
         if(wrapper.isValid()){
             QGridLayout::addWidget(widget,_row,_column,_rowSpan,columnSpan,align);
         }else{
@@ -45,12 +38,11 @@ void QFlowLayout::addWidget(QWidget *widget, short _row, short _column, short _r
     }else{
         QGridLayout::addWidget(widget,_row,_column,_rowSpan,columnSpan,align);
     }
-
-
     widget->show();
     if (isZoomed()) widget->hide();
     update();
     originalGeometries[widget] = widget->rect();
+
 }
 
 bool QFlowLayout::contains(QWidget *widget) const
@@ -150,7 +142,7 @@ void QFlowLayout::showAll() {
             // Push Left
             int distance = zoomCol - widgetCol;
             int offset = fullSize.left() - (widgetSize.width() + horizontalSpacing()) * distance;
-            newTopLeft = QPoint(offset - left, widgetRect.top());
+            newTopLeft = QPoint(offset-left, widgetRect.top());
 
         } else if (widgetCol > zoomCol) {
             // Push Right (Fixed overlap)
@@ -200,7 +192,7 @@ void QFlowLayout::zoomTo(QWidget *widget) {
 
     int left, top, right, bottom;
     getContentsMargins(&left, &top, &right, &bottom);
-    QRect fullSize = widget->parentWidget()->rect().adjusted(left, top, -right, -bottom);
+    QRect fullSize = parentWidget()->rect().adjusted(left, top, -right, -bottom);
 
     //QEasingCurve _easing(QEasingCurve::OutBounce);
     //_easing.setAmplitude(0.7);
@@ -249,7 +241,7 @@ void QFlowLayout::zoomTo(QWidget *widget) {
             // Push Left
             int distance = zoomCol - widgetCol;
             int offset = fullSize.left() - (widgetSize.width() + horizontalSpacing()) * distance;
-            newTopLeft = QPoint(offset - left, widgetRect.top());
+            newTopLeft = QPoint(offset, widgetRect.top());
 
         } else if (widgetCol > zoomCol) {
             // Push Right (Fixed overlap)
@@ -279,10 +271,12 @@ void QFlowLayout::zoomTo(QWidget *widget) {
                 wrapper.widget->hide();
             }
         }
+    
         zoomedWidgetPtr->setGeometry(fullSize);
         zoomedWidgetPtr->updateGeometry();
         m_isAnimating=false;
         update();
+        
     });
 
     animationGroup->start(QAbstractAnimation::DeleteWhenStopped);
