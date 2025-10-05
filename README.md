@@ -1,4 +1,4 @@
-# QAnimatedGridLayout_Test
+# QAnimatedGridLayout
 
 A sample Qt project demonstrating the use of an animated grid layout. This project showcases how to create dynamic, animated transitions between widgets in a grid layout using Qt.
 
